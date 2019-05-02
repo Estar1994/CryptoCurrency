@@ -1,11 +1,11 @@
-package com.erickpereyra.cryptocurrencyticker;
+package com.erickpereyra.cryptocurrencyticker.presentation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.erickpereyra.cryptocurrencyticker.R;
 
-    final String BASE_URL = "https://api.livecoin.net/";
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
