@@ -1,15 +1,38 @@
 package com.erickpereyra.cryptocurrencyticker.data.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class USD {
 
+    @SerializedName("price")
     public double price;
+
+    @SerializedName("volume_24h")
     public long volume_24h;
+
+    @SerializedName("percent_change_1h")
     public double percent_change_1h;
+
+    @SerializedName("percent_change_24h")
     public double percent_change_24h ;
+
+    @SerializedName("percent_change_7d")
     public double percent_change_7d ;
+
+    @SerializedName("market_cap")
     public long market_cap;
+
+    @SerializedName("last_updated")
     public String last_updated;
 
+
+    public USD(double price, long volume_24h, double percent_change_1h, double percent_change_24h,
+               double percent_change_7d, long market_cap, String last_updated){
+
+        this.price = price;
+        this.volume_24h = volume_24h;
+
+    }
 
     public Double getPrice(){
         return  price;

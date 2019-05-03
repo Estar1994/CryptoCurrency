@@ -1,6 +1,10 @@
 package com.erickpereyra.cryptocurrencyticker.data.model;
 
+import java.util.ArrayList;
+
 public class CryptoCurrency {
 
-    //private List<>
+
+    ArrayList<BTC> btc;
+    ArrayList<>
 }

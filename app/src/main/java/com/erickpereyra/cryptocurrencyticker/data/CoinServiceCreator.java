@@ -5,6 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class CoinServiceCreator {
 
+
     public static Coins createCoinMarketCap(){
         return new Retrofit.Builder()
                 .baseUrl("https://coinmarketcap.com/api/documentation/v1/#")
