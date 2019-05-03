@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 
 public class SharedPreferencesHelper {
 
-    private static SharedPreferences get(final Context context){
+    private static SharedPreferences get(final Context context) {
         return context.getSharedPreferences("market_browser", Context.MODE_PRIVATE);
     }
+}
