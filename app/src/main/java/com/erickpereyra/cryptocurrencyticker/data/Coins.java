@@ -10,9 +10,9 @@ import retrofit2.http.Headers;
 public interface Coins{
 
     //https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
-    String API_KEY = "20378a6f-13df-43c0-8efe-38a39c375786";
+    //String API_KEY = "20378a6f-13df-43c0-8efe-38a39c375786";
 
-    @Headers("X-CMC_PRO_API_KEY:" + API_KEY)
-    @GET("/v1/cryptocurrency/listings/latest?")
+    @Headers("X-CMC_PRO_API_KEY:20378a6f-13df-43c0-8efe-38a39c375786")
+    @GET("/v1/cryptocurrency/listings/latest")
     Call<CryptoCurrencyResponseModel> get
 }
