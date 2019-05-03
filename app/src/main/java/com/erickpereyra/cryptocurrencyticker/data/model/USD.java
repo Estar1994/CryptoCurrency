@@ -10,6 +10,7 @@ public class USD {
     public long market_cap;
     public String last_updated;
 
+
     public Double getPrice(){
         return  price;
     }
