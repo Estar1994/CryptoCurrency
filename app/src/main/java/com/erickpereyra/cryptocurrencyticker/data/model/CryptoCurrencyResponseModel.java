@@ -1,20 +1,30 @@
 package com.erickpereyra.cryptocurrencyticker.data.model;
 
-import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
-
 public class CryptoCurrencyResponseModel {
 
+    private USD usd;
+    private BTC btc;
+    private Datum datum;
+    private Status status;
+    private Quote quote;
 
-    @SerializedName("bitcoin")
-    public List<BTC> btc;
+    public USD getUsd() {
+        return usd;
+    }
 
-    @SerializedName("usDollars")
-    public List<USD> usd;
+    public BTC getBtc() {
+        return btc;
+    }
 
-    @SerializedName("quotes")
-    public List<Quote> quotes;
+    public Datum getDatum() {
+        return datum;
+    }
 
+    public Status getStatus() {
+        return status;
+    }
 
+    public Quote getQuote() {
+        return quote;
+    }
 }

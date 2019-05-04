@@ -1,55 +1,53 @@
 package com.erickpereyra.cryptocurrencyticker.data.model;
 
-import com.google.gson.annotations.SerializedName;
-
 import java.util.List;
 
 public class Datum {
 
-    @SerializedName("id")
-    public int id ;
+    //@SerializedName("id")
+    private int id ;
 
-    @SerializedName("name")
-    public String name ;
+   // @SerializedName("name")
+   private String name ;
 
-    @SerializedName("symbol")
-    public String symbol ;
+    //@SerializedName("symbol")
+    private String symbol ;
 
-    @SerializedName("slug")
-    public String slug ;
+    //@SerializedName("slug")
+    private String slug ;
 
-    @SerializedName("cmc_rank")
-    public int cmc_rank ;
+    //@SerializedName("cmc_rank")
+    private int cmc_rank ;
 
-    @SerializedName("num_market_pairs")
-    public int num_market_pairs ;
+    //@SerializedName("num_market_pairs")
+    private int num_market_pairs ;
 
-    @SerializedName("circulating_supply")
-    public int circulating_supply ;
+    //@SerializedName("circulating_supply")
+    private int circulating_supply ;
 
-    @SerializedName("total_supply")
-    public int total_supply ;
+    //@SerializedName("total_supply")
+    private int total_supply ;
 
-    @SerializedName("max_supply")
-    public int max_supply ;
+    //@SerializedName("max_supply")
+    private int max_supply ;
 
-    @SerializedName("last_updated")
-    public String last_updated;
+    //@SerializedName("last_updated")
+    private String last_updated;
 
-    @SerializedName("date_added")
-    public String date_added ;
+   // @SerializedName("date_added")
+   private String date_added ;
 
-    @SerializedName("tags")
-    public List<String> tags;
+    //@SerializedName("tags")
+    private List<String> tags;
 
-    @SerializedName("platform")
-    public Object platform ;
+   // @SerializedName("platform")
+   private Object platform ;
 
-    @SerializedName("quote")
-    public Quote quote ;
+   // @SerializedName("quote")
+   private Quote quote ;
 
 
-    public Datum(int id, String name, String symbol, String slug, int cmc_rank, int num_market_pairs,
+   /* public Datum(int id, String name, String symbol, String slug, int cmc_rank, int num_market_pairs,
                  int circulating_supply, int total_supply, int max_supply, String last_updated,
                  String date_added, List<String> tags, Object platform, Quote quote){
 
@@ -68,26 +66,26 @@ public class Datum {
         this.platform = platform;
         this.quote = quote;
 
-    }
+    }*/
     public Integer getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+   /* public void setId(Integer id) {
         this.id = id;
     }
 
-
+*/
 
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+ /*   public void setName(String name) {
         this.name = name;
     }
-
+*/
 
 
 
@@ -96,35 +94,43 @@ public class Datum {
         return symbol;
     }
 
-    public void setSymbol(String symbol) {
+    /*public void setSymbol(String symbol) {
         this.symbol = symbol;
     }
 
 
-
+*/
 
 
     public String getSlug() {
         return slug;
     }
 
-    public void setSlug(String slug) {
+    /*public void setSlug(String slug) {
         this.slug = slug;
+    }
+*/
+
+
+    public int getCmcRank() {
+        return cmc_rank;
     }
 
 
 
-
+    public int getNumMarketPairs() {
+        return num_market_pairs;
+    }
 
     public int getCirculatingSupply() {
         return circulating_supply;
     }
 
-    public void setCirculatingSupply(int circulatingSupply) {
+    /*public void setCirculatingSupply(int circulatingSupply) {
         this.circulating_supply = circulatingSupply;
     }
 
-
+*/
 
 
 
@@ -132,11 +138,11 @@ public class Datum {
         return total_supply;
     }
 
-    public void setTotalSupply(int totalSupply) {
+    /*public void setTotalSupply(int totalSupply) {
         this.total_supply = totalSupply;
     }
 
-
+*/
 
 
 
@@ -144,51 +150,55 @@ public class Datum {
         return max_supply;
     }
 
-    public void setMaxSupply(int maxSupply) {
+    /*public void setMaxSupply(int maxSupply) {
         this.max_supply = maxSupply;
     }
 
 
+*/
 
+    public String getLastUpdated() {
+        return last_updated;
+    }
 
 
     public String getDateAdded() {
         return date_added;
     }
 
-    public void setDateAdded(String dateAdded) {
+
+    public List<String> getTags(){
+        return tags;
+    }
+
+    public Object getPlatform(){
+        return platform;
+    }
+
+
+    /*public void setDateAdded(String dateAdded) {
         this.date_added = dateAdded;
     }
-
-    public int getNumMarketPairs() {
-        return num_market_pairs;
-    }
-
-    public void setNumMarketPairs(int numMarketPairs) {
+*/
+    /*public void setNumMarketPairs(int numMarketPairs) {
         this.num_market_pairs = numMarketPairs;
     }
+*/
 
-    public int getCmcRank() {
-        return cmc_rank;
-    }
-
-    public void setCmcRank(Integer cmcRank) {
+    /*public void setCmcRank(Integer cmcRank) {
         this.cmc_rank = cmcRank;
     }
+*/
 
-    public String getLastUpdated() {
-        return last_updated;
-    }
-
-    public void setLastUpdated(String lastUpdated) {
+    /*public void setLastUpdated(String lastUpdated) {
         this.last_updated = lastUpdated;
     }
-
+*/
     public Quote getQuote() {
         return quote;
     }
 
-    public void setQuote(Quote quote) {
+    /*public void setQuote(Quote quote) {
         this.quote = quote;
-    }
+    }*/
 }

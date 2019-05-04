@@ -5,7 +5,6 @@ import com.erickpereyra.cryptocurrencyticker.data.model.CryptoCurrencyResponseMo
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
-import retrofit2.http.Query;
 
 public interface Coins{
 
@@ -15,5 +14,9 @@ public interface Coins{
     @Headers("X-CMC_PRO_API_KEY: 20378a6f-13df-43c0-8efe-38a39c375786")
     @GET("/v1/cryptocurrency/listings/latest")
 
-    Call<CryptoCurrencyResponseModel> getUserList(@Query("limit")String page);
+    Call<CryptoCurrencyResponseModel> getDatum();//@Query("limit")String page);
+
+    //AsyncTask getDatum();
+
+    //AsyncTask getDatum();
 }

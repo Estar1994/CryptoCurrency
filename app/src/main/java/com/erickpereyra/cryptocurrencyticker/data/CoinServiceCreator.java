@@ -8,7 +8,7 @@ public class CoinServiceCreator {
 
     public static Coins createCoinMarketCap(){
         return new Retrofit.Builder()
-                .baseUrl("https://coinmarketcap.com/api/documentation/v1/#")
+                .baseUrl("https://coinmarketcap.com/api/documentation/v1/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(Coins.class);
