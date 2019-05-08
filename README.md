@@ -15,5 +15,3 @@ Presentation layer: Activity 1: Will display the current Cryptocurrency prices. 
 
 (Optional) Activity 3:. we can choose to add it or not since we only need 2 -3 activities for our project.
 
-
-![App Image](C:\Users\Estar1994\Documents\John Jay Spring 2019\CSCI 380-04  MA&PD\AppImage)
